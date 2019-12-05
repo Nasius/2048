@@ -2,9 +2,10 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background-image: url('../img/background.jpg');
+  background-position: center;
+  color:white;
+  font-family: "Russo One","Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
 body {
@@ -53,13 +54,12 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 2px;
   color: white;
   margin-top: 8px;
   text-align: center; }
@@ -150,7 +150,7 @@ hr {
   -ms-touch-action: none;
   touch-action: none;
   background: #bbada0;
-  border-radius: 6px;
+  border-radius: 3px;
   width: 500px;
   height: 500px;
   -webkit-box-sizing: border-box;
