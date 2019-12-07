@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-image: url('../img/background.jpg');
+  background: #776e65;
   background-position: center;
   color:white;
   font-family: "Russo One","Clear Sans", "Helvetica Neue", Arial, sans-serif;
