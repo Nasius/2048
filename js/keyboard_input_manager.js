@@ -77,7 +77,7 @@ KeyboardInputManager.prototype.listen = function () {
   var touchStartClientX, touchStartClientY;
   var gameContainer = document.getElementsByClassName("game-container")[0];
 
-  gameContainer.addEventListener(this.eventTouchstart, function (event) {
+  document.addEventListener(this.eventTouchstart, function (event) {
     if ((!window.navigator.msPointerEnabled && event.touches.length > 1) ||
         event.targetTouches.length > 1) {
       return; // Ignore if touching with more than 1 finger
@@ -94,11 +94,11 @@ KeyboardInputManager.prototype.listen = function () {
     event.preventDefault();
   });
 
-  gameContainer.addEventListener(this.eventTouchmove, function (event) {
+  document.addEventListener(this.eventTouchmove, function (event) {
     event.preventDefault();
   });
 
-  gameContainer.addEventListener(this.eventTouchend, function (event) {
+  document.addEventListener(this.eventTouchend, function (event) {
     if ((!window.navigator.msPointerEnabled && event.touches.length > 0) ||
         event.targetTouches.length > 0) {
       return; // Ignore if still touching with one or more fingers
